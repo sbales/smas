@@ -194,37 +194,19 @@ html, body
     font-size: 12px;
 }
 
-.footer-link
-{
-}
-
 .facebook-link
 {
     height: 30px;
-    background-image: url('images/bw-facebook.svg');
+    border: none;
+    width: 30px;
+    border-radius: 3px;
 }
 
 .facebook-link:hover
 {
     height: 30px;
-    background-image: url('images/blue-facebook.svg');
-}
-
-.facebook-btn {
-    background:url(/images/bw-facebook-01.svg) no-repeat;
-    opacity: 100;
-    cursor:pointer;
-    height: 30px;
-    border: none;
-    border: 0;
-}
-
-.facebook-btn:hover
-{
-    background: url(/images/blue-facebook-01.svg) no-repeat;
-    cursor: pointer;
-    height: 30px;
-    border: none;
+    border: 1px solid #fff;
+    background-color: rgba(59, 89, 152, 0.5);
 }
 
 .news-title-link
@@ -554,7 +536,7 @@ html, body
     margin-left: 10px;
     margin-right: 10px;
     color: white;
-    font-size: 1.5em;
+    font-size: 125%;
 }
 
 .contact-link:hover
