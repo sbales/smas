@@ -1,0 +1,10 @@
+COLORS
+Blue:		#16608D
+Yellow:		#CF892E
+Dark Grey:	#222222
+Light Grey:	#808080
+Red:		#A62129
+
+FONTS:
+Script MT Bold
+Great Vibes
