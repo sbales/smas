@@ -1,0 +1,171 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:GreatVibes-Regular
+FamilyName:Great Vibes
+StyleName:Regular
+FullName:Great Vibes
+MenuName:Great Vibes
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\GreatVibes-Regular.ttf
+DataFormat:sfntData
+FileLength:106004
+FileModTime:1332997200
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Great Vibes
+NameArray:0,Win,1,Great Vibes
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Bold
+FamilyName:Minion Pro
+StyleName:Bold
+FullName:Minion Pro Bold
+MenuName:Minion Pro
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\MinionPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:234868
+FileModTime:1188191311
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro Bold
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-BoldSubh
+FamilyName:Minion Pro
+StyleName:Bold Subhead
+FullName:Minion Pro Bold Subhead
+MenuName:Minion Pro Subh
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\MinionPro-BoldSubh.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:238124
+FileModTime:1188191311
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:190
+NameArray:0,Mac,18,Minion Pro Bold Subh
+NameArray:0,Mac,4,Minion Pro Bold Subhead
+NameArray:0,Win,1,Minion Pro Subh
+NameArray:0,Win,16,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-ItSubh
+FamilyName:Minion Pro
+StyleName:Italic Subhead
+FullName:Minion Pro Italic Subhead
+MenuName:Minion Pro Subh
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\MinionPro-ItSubh.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:280168
+FileModTime:1188191314
+WeightClass:400
+WidthClass:5
+AngleClass:1
+DesignSize:190
+NameArray:0,Mac,18,Minion Pro Ital Subh
+NameArray:0,Mac,4,Minion Pro Italic Subhead
+NameArray:0,Win,1,Minion Pro Subh
+NameArray:0,Win,16,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:235436
+FileModTime:1188191317
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Semibold
+FamilyName:Minion Pro
+StyleName:Semibold
+FullName:Minion Pro Semibold
+MenuName:Minion Pro SmBd
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\MinionPro-Semibold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:237800
+FileModTime:1188191317
+WeightClass:600
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,18,Minion Pro SmBd
+NameArray:0,Mac,4,Minion Pro Semibold
+NameArray:0,Win,1,Minion Pro SmBd
+NameArray:0,Win,16,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Wingdings-Regular
+FamilyName:Wingdings
+StyleName:Regular
+FullName:Wingdings
+MenuName:Wingdings
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Nikol\Google Drive\Springfield Mid-America Singers\Donor Brochure\Donor Brochure 2016 Print\Document fonts\Wingdings.ttf
+DataFormat:sfntData
+FileLength:83496
+FileModTime:1352095200
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Wingdings
+NameArray:0,Win,1,Wingdings
+%EndFont
+
