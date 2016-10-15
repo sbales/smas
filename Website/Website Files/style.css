@@ -705,3 +705,59 @@ html, body
     font-size: 1.3em
 }
 
+
+.form-name {
+    font-size: 150%;
+    
+}
+@media (min-width:768px){
+        .form-name{
+            text-align: right;
+    }
+}
+
+.form-des {
+    display: inline;
+    font-size: 110%;
+}
+
+.agreement {
+    font-size: 130%;
+    text-align: center
+}
+
+.ad-title {
+    border-top: 1px solid #fff; 
+}
+
+#advertising-contract input{
+    background: transparent;
+    padding: 3px;
+    border: 1px solid;
+}
+#advertising-contract input[type="file"]{
+    background: transparent;
+    padding: 3px;
+    border:none;
+}
+
+#advertising-contract select{
+    background: transparent;
+    padding: 3px;
+    border: 1px solid;
+}
+#advertising-contract select option{
+    background: black;
+    padding: 3px;
+    border: 1px solid;
+}
+#advertising-contract submit{
+    background: transparent;
+    padding: 3px;
+    border: 1px solid;
+}
+#advertising-contract submit:hover{
+    background: #16608D;
+    padding: 3px;
+    border: 1px solid;
+}
