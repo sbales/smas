@@ -1,0 +1,73 @@
+.no-margin {
+    margin: 0px;
+}
+.small-top-margin {
+    margin-top: 10px;
+}
+.small-bottom-margin{
+    margin-bottom: 10px;
+}
+.no-padding {
+    padding: 0px;
+}
+
+.no-max {
+    max-height: none!important;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+.half-width{
+    width: 50%;
+}
+.padding-top{
+    padding-top: 20px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.no-right-padding {
+    padding-right: 0px;
+}
+
+.image-margins {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.center{
+    margin: 0, auto !important;
+}
+.table{
+    display: table;
+    height: 100%;
+    @media (max-width: 40em){
+        height: 50%;
+    }
+}
+.table-middle{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+.centered {
+    display: block;
+    text-align: center;
+}
+.donation-button{
+    height: 100%;
+    margin-top: 8px;
+}
+.left-small-padding{
+    padding-left: 15px;
+}
+.bottom-small-padding{
+    padding-bottom: 15px;
+}

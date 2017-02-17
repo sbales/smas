@@ -1,0 +1,136 @@
+Options +SymLinksIfOwnerMatch -MultiViews
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#If your website is installed in a subfolder, change the line below to reflect the path to the subfolder.
+#e.g. for http://www.example.com/subdomain1/subdomain2/ make it RewriteBase /subdomain1/subdomain2
+RewriteBase /
+
+#If you wish to use a custom 404 page, place a file named 404.php in your website's root and uncomment the line below.
+#If your website is installed in a subfolder, change the line below to reflect the path to the subfolder.
+#e.g. for http://www.example.com/subdomain1/subdomain2/ make it ErrorDocument 404 /subdomain1/subdomain2/404.php
+ErrorDocument 404 /404.php
+
+#If your site begins with 'www', uncomment the following two lines
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+#DO NOT EDIT BELOW THIS
+
+RewriteRule ^index.php$ "" [R=301,L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule . - [L]
+
+#thank-you.php
+RewriteRule ^thank-you$ "$0/" [R=301,L,QSA]
+RewriteRule ^thank-you/$ thank-you.php [L,QSA]
+RewriteRule ^thank-you/.*?([^\.\/]*)\.html$ thank-you.php?pname=$1 [L,QSA]
+RewriteRule ^thank-you/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ thank-you.php?d=$1$2$3 [L,QSA]
+RewriteRule ^thank-you/[^\.]*?([^/\.]*)/$ thank-you.php?fname=$1 [L,QSA]
+RewriteRule ^thank-you/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#story.php
+RewriteRule ^story$ "$0/" [R=301,L,QSA]
+RewriteRule ^story/$ story.php [L,QSA]
+RewriteRule ^story/.*?([^\.\/]*)\.html$ story.php?pname=$1 [L,QSA]
+RewriteRule ^story/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ story.php?d=$1$2$3 [L,QSA]
+RewriteRule ^story/[^\.]*?([^/\.]*)/$ story.php?fname=$1 [L,QSA]
+RewriteRule ^story/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#sponsors.php
+RewriteRule ^sponsors$ "$0/" [R=301,L,QSA]
+RewriteRule ^sponsors/$ sponsors.php [L,QSA]
+RewriteRule ^sponsors/.*?([^\.\/]*)\.html$ sponsors.php?pname=$1 [L,QSA]
+RewriteRule ^sponsors/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ sponsors.php?d=$1$2$3 [L,QSA]
+RewriteRule ^sponsors/[^\.]*?([^/\.]*)/$ sponsors.php?fname=$1 [L,QSA]
+RewriteRule ^sponsors/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#season.php
+RewriteRule ^season$ "$0/" [R=301,L,QSA]
+RewriteRule ^season/$ season.php [L,QSA]
+RewriteRule ^season/.*?([^\.\/]*)\.html$ season.php?pname=$1 [L,QSA]
+RewriteRule ^season/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ season.php?d=$1$2$3 [L,QSA]
+RewriteRule ^season/[^\.]*?([^/\.]*)/$ season.php?fname=$1 [L,QSA]
+RewriteRule ^season/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#photo-gallery.php
+RewriteRule ^photo-gallery$ "$0/" [R=301,L,QSA]
+RewriteRule ^photo-gallery/$ photo-gallery.php [L,QSA]
+RewriteRule ^photo-gallery/.*?([^\.\/]*)\.html$ photo-gallery.php?pname=$1 [L,QSA]
+RewriteRule ^photo-gallery/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ photo-gallery.php?d=$1$2$3 [L,QSA]
+RewriteRule ^photo-gallery/[^\.]*?([^/\.]*)/$ photo-gallery.php?fname=$1 [L,QSA]
+RewriteRule ^photo-gallery/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#news.php
+RewriteRule ^news$ "$0/" [R=301,L,QSA]
+RewriteRule ^news/$ news.php [L,QSA]
+RewriteRule ^news/.*?([^\.\/]*)\.html$ news.php?pname=$1 [L,QSA]
+RewriteRule ^news/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ news.php?d=$1$2$3 [L,QSA]
+RewriteRule ^news/[^\.]*?([^/\.]*)/$ news.php?fname=$1 [L,QSA]
+RewriteRule ^news/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#gallery.php
+RewriteRule ^gallery$ "$0/" [R=301,L,QSA]
+RewriteRule ^gallery/$ gallery.php [L,QSA]
+RewriteRule ^gallery/.*?([^\.\/]*)\.html$ gallery.php?pname=$1 [L,QSA]
+RewriteRule ^gallery/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ gallery.php?d=$1$2$3 [L,QSA]
+RewriteRule ^gallery/[^\.]*?([^/\.]*)/$ gallery.php?fname=$1 [L,QSA]
+RewriteRule ^gallery/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#contract-recieved.php
+RewriteRule ^contract-recieved$ "$0/" [R=301,L,QSA]
+RewriteRule ^contract-recieved/$ contract-recieved.php [L,QSA]
+RewriteRule ^contract-recieved/.*?([^\.\/]*)\.html$ contract-recieved.php?pname=$1 [L,QSA]
+RewriteRule ^contract-recieved/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ contract-recieved.php?d=$1$2$3 [L,QSA]
+RewriteRule ^contract-recieved/[^\.]*?([^/\.]*)/$ contract-recieved.php?fname=$1 [L,QSA]
+RewriteRule ^contract-recieved/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#contact.php
+RewriteRule ^contact$ "$0/" [R=301,L,QSA]
+RewriteRule ^contact/$ contact.php [L,QSA]
+RewriteRule ^contact/.*?([^\.\/]*)\.html$ contact.php?pname=$1 [L,QSA]
+RewriteRule ^contact/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ contact.php?d=$1$2$3 [L,QSA]
+RewriteRule ^contact/[^\.]*?([^/\.]*)/$ contact.php?fname=$1 [L,QSA]
+RewriteRule ^contact/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#audition.php
+RewriteRule ^audition$ "$0/" [R=301,L,QSA]
+RewriteRule ^audition/$ audition.php [L,QSA]
+RewriteRule ^audition/.*?([^\.\/]*)\.html$ audition.php?pname=$1 [L,QSA]
+RewriteRule ^audition/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ audition.php?d=$1$2$3 [L,QSA]
+RewriteRule ^audition/[^\.]*?([^/\.]*)/$ audition.php?fname=$1 [L,QSA]
+RewriteRule ^audition/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#advertising.php
+RewriteRule ^advertising$ "$0/" [R=301,L,QSA]
+RewriteRule ^advertising/$ advertising.php [L,QSA]
+RewriteRule ^advertising/.*?([^\.\/]*)\.html$ advertising.php?pname=$1 [L,QSA]
+RewriteRule ^advertising/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ advertising.php?d=$1$2$3 [L,QSA]
+RewriteRule ^advertising/[^\.]*?([^/\.]*)/$ advertising.php?fname=$1 [L,QSA]
+RewriteRule ^advertising/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#about.php
+RewriteRule ^about$ "$0/" [R=301,L,QSA]
+RewriteRule ^about/$ about.php [L,QSA]
+RewriteRule ^about/.*?([^\.\/]*)\.html$ about.php?pname=$1 [L,QSA]
+RewriteRule ^about/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ about.php?d=$1$2$3 [L,QSA]
+RewriteRule ^about/[^\.]*?([^/\.]*)/$ about.php?fname=$1 [L,QSA]
+RewriteRule ^about/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#404.php
+RewriteRule ^404$ "$0/" [R=301,L,QSA]
+RewriteRule ^404/$ 404.php [L,QSA]
+RewriteRule ^404/.*?([^\.\/]*)\.html$ 404.php?pname=$1 [L,QSA]
+RewriteRule ^404/([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ 404.php?d=$1$2$3 [L,QSA]
+RewriteRule ^404/[^\.]*?([^/\.]*)/$ 404.php?fname=$1 [L,QSA]
+RewriteRule ^404/[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+
+#index.php
+RewriteRule ^.*?([^\.\/]*)\.html$ ?pname=$1 [L,QSA]
+RewriteRule ^([1-2]\d{3})/(?:(0[1-9]|1[0-2])/(?:(0[1-9]|1[0-9]|2[0-9]|3[0-1])/)?)?$ ?d=$1$2$3 [L,QSA]
+RewriteRule ^[^\.]*?([^/\.]*)/$ ?fname=$1 [L,QSA]
+RewriteRule ^\w[^\.]*?([^/\.]*)$ "$0/" [R=301,L,QSA]
+</IfModule>

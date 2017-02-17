@@ -1,0 +1,16 @@
+<header>
+    <div class="medium-4 columns small-center"> <a class="" href="<cms:show k_site_link />"><img class="nav-height " src="<cms:show k_site_link />images/logo-small.svg"></a> </div>
+    <div class="table medium-8 column button-group expanded small-center">
+        <div class="table-middle">
+            <cms:if k_template_name=='about.php'> <a href="<cms:link masterpage='about.php' />" class="hollow button nav-btn focus">About</a>
+                <cms:else /> <a href="<cms:link masterpage='about.php' />" class="hollow button nav-btn">About</a></cms:if>
+            <cms:if k_template_name=='season.php'> <a href="<cms:link masterpage='season.php' />" class="hollow button nav-btn focus">Season</a>
+                <cms:else /> <a href="<cms:link masterpage='season.php' />" class="hollow button nav-btn">Season</a></cms:if>
+            <cms:if k_template_name=='gallery.php'> <a href="<cms:link masterpage='gallery.php' />" class="hollow button nav-btn focus">Gallery</a>
+                <cms:else /> <a href="<cms:link masterpage='gallery.php' />" class="hollow button nav-btn">Gallery</a></cms:if>
+            <cms:if k_template_name=='news.php'> <a href="<cms:link masterpage='news.php' />" class="hollow button nav-btn focus">News</a>
+                <cms:else /> <a href="<cms:link masterpage='news.php' />" class="hollow button nav-btn">News</a></cms:if>
+            <cms:if k_template_name=='contact.php'> <a href="<cms:link masterpage='contact.php' />" class="hollow button nav-btn focus">Contact</a>
+                <cms:else /> <a href="<cms:link masterpage='contact.php' />" class="hollow button nav-btn">Contact</a></cms:if> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GJY8XVPT3RBL" target="_blank" class="hollow button nav-btn">Donate</a> </div>
+    </div>
+</header>

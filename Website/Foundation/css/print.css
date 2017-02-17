@@ -1,0 +1,15 @@
+@media print {
+    form{
+        width: 100%;
+    }
+    
+    h3{
+        width: 100%;
+    }
+    p{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+}

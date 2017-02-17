@@ -1,0 +1,17 @@
+<div class="secondary-content row">
+    <div class="small-top-margin small-bottom-margin medium-6 columns">
+        <h3 class="secondary-text">Recent News</h3>
+        <cms:pages masterpage='story.php' paginate='1' limit='3'>
+            <div class="news-story">
+                <h6><cms:show k_page_title /></h6>
+                <p>
+                    <cms:excerptHTML count='40' ignore='img'>
+                        <cms:show news_content /></cms:excerptHTML>
+                </p> <a class="button hollow secondary small" href="<cms:show k_page_link />">Read More >></a> </div>
+        </cms:pages>
+    </div>
+    <div class="small-top-margin small-bottom-margin medium-6 columns left-border">
+        <h3 class="secondary-text">Listen</h3>
+        <iframe width="100%" height="330px" min-height="300px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/275745017&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
+</div>

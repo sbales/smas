@@ -1,0 +1,22 @@
+//Fonts
+$bodyfont: "minion-pro", serif;
+$titlefont: "minion-pro", serif;
+
+
+//Colors
+$primary:#16608D;
+$secondary:#7EB2DD;
+$alert:#A62129;
+$accent-light:#808080;
+$accent-dark:#222222;
+$black:#000000;
+$white: #FFFFFF;
+
+
+@import 'foundation';
+@import 'display';
+@import 'margins-padding';
+@import 'typography';
+@import 'forms';
+@import 'buttons';
+//@import 'orbiter';

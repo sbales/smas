@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row secondary-info">
+        <div class="col-md-6 right-column"> <a href="<cms:link masterpage='news.php' />" target="_self"><h3 class="h3-smallheading">Recent News</h3></a>
+            <cms:pages masterpage='story.php' limit='3'> <a href="<cms:show k_page_link />" target="_self"><h5 class="h5-news-title news-title-link"><br><cms:show k_page_title /></h5><p><cms:excerptHTML count='25' ignore='img'><cms:show article_text /></cms:excerptHTML><br></p></a></cms:pages>
+        </div>
+        <div class="col-md-6 left-column"> <a href="<cms:link masterpage='gallery.php' />" target="_self"><h3 class="h3-smallheading">Listen</h3></a>
+            <cms:pages masterpage='gallery.php'> 
+            <cms:show soundcloud />
+            </cms:pages>
+        </div>
+    </div>
+</div>

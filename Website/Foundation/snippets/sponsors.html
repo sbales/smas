@@ -1,0 +1,26 @@
+<cms:pages masterpage='sponsors.php'>
+<div class="sponsors row">
+    <h4>Sponsorship Provided By:</h4>
+    <div class="small-4 columns">
+        <h5 class="caps centered">Our Community Partner</h5>
+        <a href="<cms:show community_link />" target="_blank"><img class="full-width " src="<cms:show community_image />"></a>
+    </div>
+    <div class="small-7 columns">
+        <h5 class="caps centered">Grant Funding</h5>
+        <div class="row">
+            <div class="columns small-6">
+                <a href="<cms:show grant_link1 />" target="_blank"><img class="full-width" src="<cms:show grant_image1 />"></a>
+            </div>
+            <div class="columns small-6">
+                <a href="<cms:show grant_link2 />" target="_blank"><img class="full-width" src="<cms:show grant_image2 />"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sponsors row expanded <cms:show local_display />">
+    <h5 class="caps centered">Local Businesses</h5>
+    <cms:show_repeatable 'local_businesses'>
+    <a href="<cms:show local_link />" target="_blank"><img class="biz-logo" src="<cms:show local_image />"></a>
+    </cms:show_repeatable>
+</div>
+</cms:pages>
